@@ -1,0 +1,1 @@
+"""Freight cost monitoring assistant."""

@@ -1,0 +1,22 @@
+{
+  "shipment_records": 2940,
+  "context_notes": 10,
+  "route_week_observations": 728,
+  "alerts_written": 20,
+  "anomaly_threshold_pct": 20.0,
+  "retrieval_backend": "faiss+sentence-transformers",
+  "retrieval_warning": null,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "llm": {
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "model": "gemini-3.8-flash",
+    "enabled": false,
+    "note": "LLM disabled; deterministic explanations used."
+  },
+  "output_sha256": "4e84bb1bbd8f0da5fdfd5d62b105933b6d50ebd90062a49113c8d694fc8c38f9",
+  "core_verdicts_deterministic": true,
+  "note": "LLM, when enabled, may change reason wording only; it cannot change numbers, flags, or matched note IDs."
+}

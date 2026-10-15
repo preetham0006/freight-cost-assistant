@@ -1,0 +1,13 @@
+{
+  "runs": 3,
+  "same_input_files": true,
+  "gemini_disabled_for_reproducibility_check": true,
+  "core_flags_numbers_and_note_ids_identical": true,
+  "full_csv_sha256_by_run": [
+    "4e84bb1bbd8f0da5fdfd5d62b105933b6d50ebd90062a49113c8d694fc8c38f9",
+    "4e84bb1bbd8f0da5fdfd5d62b105933b6d50ebd90062a49113c8d694fc8c38f9",
+    "4e84bb1bbd8f0da5fdfd5d62b105933b6d50ebd90062a49113c8d694fc8c38f9"
+  ],
+  "full_csv_byte_identical": true,
+  "note": "The case brief permits explanation wording to vary; core numerical fields, flags, verdicts, and cited note IDs are compared. Gemini is disabled for this check."
+}

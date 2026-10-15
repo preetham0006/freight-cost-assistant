@@ -1,0 +1,83 @@
+{
+  "case_count": 8,
+  "passed": 8,
+  "failed": 0,
+  "accuracy": 1.0,
+  "retrieval_backend": "faiss+sentence-transformers",
+  "warning": null,
+  "results": [
+    {
+      "case_id": "festival_valid",
+      "route": "Ahmedabad-Mumbai",
+      "week_of": "2025-01-20",
+      "expected_note_id": "N002",
+      "description": "Route-specific festival surcharge in its stated week.",
+      "actual_note_id": "N002",
+      "passed": true
+    },
+    {
+      "case_id": "flood_valid",
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-03-03",
+      "expected_note_id": "N001",
+      "description": "Week falls within explicit Feb 24 to Mar 8 flood disruption range.",
+      "actual_note_id": "N001",
+      "passed": true
+    },
+    {
+      "case_id": "wrong_route",
+      "route": "Delhi-Jaipur",
+      "week_of": "2025-01-20",
+      "expected_note_id": null,
+      "description": "Festival note belongs to Ahmedabad-Mumbai, not Delhi-Jaipur.",
+      "actual_note_id": null,
+      "passed": true
+    },
+    {
+      "case_id": "flood_expired",
+      "route": "Chennai-Bangalore",
+      "week_of": "2025-03-10",
+      "expected_note_id": null,
+      "description": "Flood note ended Mar 8; follow-up note is not a positive cost driver.",
+      "actual_note_id": null,
+      "passed": true
+    },
+    {
+      "case_id": "stable_conditions",
+      "route": "Mumbai-Pune",
+      "week_of": "2025-09-15",
+      "expected_note_id": null,
+      "description": "Stable-demand note is not evidence of a cost-increasing event and is dated after the target week.",
+      "actual_note_id": null,
+      "passed": true
+    },
+    {
+      "case_id": "diesel_all_routes",
+      "route": "Mumbai-Pune",
+      "week_of": "2025-05-05",
+      "expected_note_id": "N003",
+      "description": "Diesel price increase applies to all routes in the dated week.",
+      "actual_note_id": "N003",
+      "passed": true
+    },
+    {
+      "case_id": "irrelevant_toll",
+      "route": "Delhi-Jaipur",
+      "week_of": "2024-03-11",
+      "expected_note_id": null,
+      "description": "Toll note explicitly says affected routes are not in this dataset.",
+      "actual_note_id": null,
+      "passed": true
+    },
+    {
+      "case_id": "absorbed_compliance_cost",
+      "route": "Mumbai-Pune",
+      "week_of": "2025-10-27",
+      "expected_note_id": null,
+      "description": "Compliance costs were absorbed without a rate change.",
+      "actual_note_id": null,
+      "passed": true
+    }
+  ],
+  "interpretation": "Small hand-labelled smoke/evidence set; not a statistically representative benchmark."
+}

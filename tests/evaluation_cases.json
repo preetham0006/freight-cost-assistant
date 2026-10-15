@@ -1,0 +1,10 @@
+[
+  {"case_id":"festival_valid","route":"Ahmedabad-Mumbai","week_of":"2025-01-20","expected_note_id":"N002","description":"Route-specific festival surcharge in its stated week."},
+  {"case_id":"flood_valid","route":"Chennai-Bangalore","week_of":"2025-03-03","expected_note_id":"N001","description":"Week falls within explicit Feb 24 to Mar 8 flood disruption range."},
+  {"case_id":"wrong_route","route":"Delhi-Jaipur","week_of":"2025-01-20","expected_note_id":null,"description":"Festival note belongs to Ahmedabad-Mumbai, not Delhi-Jaipur."},
+  {"case_id":"flood_expired","route":"Chennai-Bangalore","week_of":"2025-03-10","expected_note_id":null,"description":"Flood note ended Mar 8; follow-up note is not a positive cost driver."},
+  {"case_id":"stable_conditions","route":"Mumbai-Pune","week_of":"2025-09-15","expected_note_id":null,"description":"Stable-demand note is not evidence of a cost-increasing event and is dated after the target week."},
+  {"case_id":"diesel_all_routes","route":"Mumbai-Pune","week_of":"2025-05-05","expected_note_id":"N003","description":"Diesel price increase applies to all routes in the dated week."},
+  {"case_id":"irrelevant_toll","route":"Delhi-Jaipur","week_of":"2024-03-11","expected_note_id":null,"description":"Toll note explicitly says affected routes are not in this dataset."},
+  {"case_id":"absorbed_compliance_cost","route":"Mumbai-Pune","week_of":"2025-10-27","expected_note_id":null,"description":"Compliance costs were absorbed without a rate change."}
+]

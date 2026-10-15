@@ -1,0 +1,6 @@
+# Optional AI/vector dependencies. Install after requirements.txt.
+# FAISS wheel availability can vary by OS/Python version; if it fails on Windows,
+# run the project in WSL/Linux or keep the included deterministic TF-IDF fallback.
+faiss-cpu>=1.8.0
+sentence-transformers>=3.0
+google-genai>=1.0
