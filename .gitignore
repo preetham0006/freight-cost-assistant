@@ -9,4 +9,10 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 
-# Generated files
+
+# Generated reproducibility reports
+outputs/report_run*.csv
+
+# Generated vector database
+vector_store/*.faiss
+vector_store/index_metadata.json
